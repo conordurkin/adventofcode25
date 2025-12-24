@@ -27,7 +27,7 @@ def solve_part_a(filename):
         if total == 0:
             zero_count += 1
 
-    return total, zero_count
+    return zero_count
 
 def solve_part_b(filename):
     # Read input file
@@ -62,13 +62,13 @@ def solve_part_b(filename):
         # Apply wrapping
         total = new_total % 100
 
-    return total, zero_passes
+    return zero_passes
 
 
 filename = 'data/day1.txt'
 
-_, part_a = solve_part_a(filename)
-_, part_b = solve_part_b(filename)
+part_a = solve_part_a(filename)
+part_b = solve_part_b(filename)
 
 print(f"Part A: {part_a}")
 print(f"Part B: {part_b}")
