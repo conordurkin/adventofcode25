@@ -1,3 +1,5 @@
+filename = 'data/day1.txt'
+
 def solve_part_a(filename):
     # Read input file
     with open(filename) as f:
@@ -64,8 +66,6 @@ def solve_part_b(filename):
 
     return zero_passes
 
-
-filename = 'data/day1.txt'
 
 part_a = solve_part_a(filename)
 part_b = solve_part_b(filename)
